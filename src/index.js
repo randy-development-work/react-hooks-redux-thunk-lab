@@ -10,6 +10,7 @@ import App from "./App";
 import catsReducer from "./features/cats/catsSlice.js";
 
 const composedEnhancer = composeWithDevTools(applyMiddleware(thunkMiddleware));
+
 const store = createStore(catsReducer, composedEnhancer);
 
 ReactDOM.render(
